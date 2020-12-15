@@ -1,0 +1,13 @@
+Testcase1 = Verify-Video-LinkSharing-Using-ShareButton
+
+Given   A video is being watched on youtube.com 
+When    Click on the share button, copy sharing link to clipboard
+And     Launch a new tab in the same browser window with the copied video link 
+Then    Titles of both window tabs should be equal 
+
+Testcase2
+Given   A video is being watched on youtube.com 
+When    Right click on the video, copy video URL
+And     Launch a new tab in the same browser window with the copied video link 
+Then    Titles of both window tabs should be equal
+
