@@ -15,7 +15,7 @@ Test Teardown   Close Browser
 
 ***Variables***
 ${BaseURL}       youtube.com
-${CompleteURL}   https://www.youtube.com/watch?v=k6NmJKcS7wk
+${VideoURL}      https://www.youtube.com/watch?v=k6NmJKcS7wk
 ${Browser}       Chrome
 ${Timeout}       10s  
 
@@ -36,7 +36,7 @@ Verify-Video-LinkSharing-Using-ShareButton
 
 ***Keywords***
 Open Browser with Goto URL
-    Open Browser    ${CompleteURL}      ${Browser}
+    Open Browser    ${VideoURL}      ${Browser}
 
 ByPass Youtube Agreement Popup 
     Wait Until Element is Visible   id:dialog     ${Timeout}
