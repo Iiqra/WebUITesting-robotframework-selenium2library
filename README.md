@@ -70,3 +70,4 @@ $ cd docker
 $ docker build -t qa:test .
 $ ./run.sh
 ```
+The image builds sucessfully; however, the testcase was failing unexpectedly b/c it was unable to get the handle of some UI's element when executes within the image. 
