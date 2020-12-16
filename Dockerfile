@@ -13,7 +13,7 @@ RUN apt-get install -y unzip wget libnss3
 RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 RUN apt install -y ./google-chrome-stable_current_amd64.deb
 
-# RUN python set_to_path.py
+# Inshal Browser and Driver
 ENV PATH=${PATH}:'/usr/local/lib/python3.7/site-packages/chromedriver_py/chromedriver_linux64'
 ENV PATH=${PATH}:'/usr/local/lib/python3.7/site-packages/chromedriver_py/'
 RUN cp /usr/local/lib/python3.7/site-packages/chromedriver_py/chromedriver_linux64 /usr/local/lib/python3.7/site-packages/chromedriver_py/chromedriver
