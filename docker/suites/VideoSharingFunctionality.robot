@@ -21,10 +21,10 @@ ${MinWait}       1s
 ${Timeout}       10s  
 
 # Constans
-${Xpath_VideoShareIcon}    xpath://*[@id="button"]/yt-icon
-${Id_ShareIconCopyBtn}     id:copy-button
-${Id_YTAgreementPopup}     id:dialog 
-${Id_YTSignInPopup}        id:iframe
+${Locator_VideoShareIcon}    xpath://*[@id="button"]/yt-icon
+${Locator_ShareIconCopyBtn}     id:copy-button
+${Locator_YTAgreementPopup}     id:dialog 
+${Locator_YTSignInPopup}        id:iframe
 
 
 ***Test Cases***
@@ -34,8 +34,8 @@ Verify-Video-LinkSharing-Using-ShareButton
     ByPass Youtube Agreement Popup
     ByPass SignIn Popup 
     sleep   ${MinWait}  
-    Click Element By Locator    ${Xpath_VideoShareIcon}
-    Click Element By Locator    ${Id_ShareIconCopyBtn}
+    Click Element By Locator    ${Locator_VideoShareIcon}
+    Click Element By Locator    ${Locator_ShareIconCopyBtn}
     ${copied_video_url}         get_text_from_clipboard 
     Switch To New Tab With Goto URL    ${copied_video_url}
     sleep     ${MinWait} 
@@ -48,13 +48,13 @@ Open Browser with Goto URL
     Open Browser    ${VideoURL}      ${Browser}
 
 ByPass Youtube Agreement Popup 
-    Wait Until Element is Visible   ${Id_YTAgreementPopup}     ${Timeout}
+    Wait Until Element is Visible   ${Locator_YTAgreementPopup}     ${Timeout}
     Press Keys     None    TAB 
     Press Keys     None    TAB 
     Press Keys     None    RETURN
 
 ByPass SignIn Popup 
-    Wait Until Element is Visible   ${Id_YTSignInPopup}     ${Timeout}    
+    Wait Until Element is Visible   ${Locator_YTSignInPopup}     ${Timeout}    
     sleep   ${MinWait} 
     Press Keys     None    TAB 
     Press Keys     None    TAB 
