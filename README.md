@@ -9,11 +9,17 @@ An IDE or Terminal [VSCode]
 Chrome and Chrome WebDriver  
 
 # Dependencies & Installation
-**Install following dependencies**
 
-```pip install robotframework```  
-```pip install robotframework-selenium2library==3.0```  
-```pip3 install clipboard```  
+```sh
+$ clone https://github.com/Iiqra/WebUITesting-robotframework-selenium2library.git
+```
+
+**Install following dependencies**
+```sh
+$ pip install robotframework  
+$ pip install robotframework-selenium2library==3.0
+$ pip3 install clipboard
+```
 
 **Install or upgrade chromedriver**  
 i.e. for mac    
@@ -71,3 +77,10 @@ $ docker build -t qa:test .
 $ ./run.sh
 ```
 The image builds sucessfully; however, the testcase was failing unexpectedly b/c it was unable to get the handle of some UI's element when executes within the image. 
+
+# USEFUL git commands 
+```sh
+$ git rm --cached folder_name -r
+$ git rm filename 
+$ git checkout -b new_branch
+```
