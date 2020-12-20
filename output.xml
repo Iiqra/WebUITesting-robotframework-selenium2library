@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.7.4 on darwin)" generated="20201220 11:45:30.465" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.7.4 on darwin)" generated="20201220 11:59:18.705" rpa="false">
 <suite id="s1" name="VideoSharingFunctionality" source="/Users/iqraali/Projects/QA Job Assessments/QA Assessment - YT Video Sharing/suites/VideoSharingFunctionality.robot">
 <test id="s1-t1" name="Verify-Video-LinkSharing-Using-ShareButton">
-<kw name="Open Browser with Goto URL">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <arguments>
 <arg>${VideoURL}</arg>
 <arg>${Browser}</arg>
 </arguments>
-<msg timestamp="20201220 11:45:31.701" level="INFO">Opening browser 'Chrome' to base url 'https://www.youtube.com/watch?v=k6NmJKcS7wk'.</msg>
-<status status="PASS" starttime="20201220 11:45:31.701" endtime="20201220 11:45:42.866"></status>
-</kw>
-<status status="PASS" starttime="20201220 11:45:31.700" endtime="20201220 11:45:42.867"></status>
+<msg timestamp="20201220 11:59:19.440" level="INFO">Opening browser 'Chrome' to base url 'https://www.youtube.com/watch?v=k6NmJKcS7wk'.</msg>
+<status status="PASS" starttime="20201220 11:59:19.439" endtime="20201220 11:59:28.050"></status>
 </kw>
 <kw name="ByPass Youtube Agreement Popup">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
@@ -21,7 +18,7 @@
 <arg>${Locator_YTAgreementPopup}</arg>
 <arg>${Timeout}</arg>
 </arguments>
-<status status="PASS" starttime="20201220 11:45:42.871" endtime="20201220 11:45:47.730"></status>
+<status status="PASS" starttime="20201220 11:59:28.053" endtime="20201220 11:59:32.307"></status>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
@@ -29,10 +26,10 @@
 <arg>None</arg>
 <arg>TAB</arg>
 </arguments>
-<msg timestamp="20201220 11:45:47.732" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20201220 11:45:47.732" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20201220 11:45:47.732" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20201220 11:45:47.731" endtime="20201220 11:45:47.877"></status>
+<msg timestamp="20201220 11:59:32.309" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20201220 11:59:32.309" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20201220 11:59:32.309" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20201220 11:59:32.308" endtime="20201220 11:59:32.398"></status>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
@@ -40,10 +37,10 @@
 <arg>None</arg>
 <arg>TAB</arg>
 </arguments>
-<msg timestamp="20201220 11:45:47.879" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20201220 11:45:47.879" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20201220 11:45:47.879" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20201220 11:45:47.877" endtime="20201220 11:45:48.081"></status>
+<msg timestamp="20201220 11:59:32.399" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20201220 11:59:32.399" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20201220 11:59:32.399" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20201220 11:59:32.398" endtime="20201220 11:59:32.453"></status>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
@@ -51,12 +48,12 @@
 <arg>None</arg>
 <arg>RETURN</arg>
 </arguments>
-<msg timestamp="20201220 11:45:48.083" level="INFO">Sending key(s) ('RETURN',) to page.</msg>
-<msg timestamp="20201220 11:45:48.083" level="INFO">Pressing special key RETURN to browser.</msg>
-<msg timestamp="20201220 11:45:48.083" level="INFO">Releasing special key RETURN.</msg>
-<status status="PASS" starttime="20201220 11:45:48.082" endtime="20201220 11:45:48.653"></status>
+<msg timestamp="20201220 11:59:32.454" level="INFO">Sending key(s) ('RETURN',) to page.</msg>
+<msg timestamp="20201220 11:59:32.454" level="INFO">Pressing special key RETURN to browser.</msg>
+<msg timestamp="20201220 11:59:32.454" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20201220 11:59:32.454" endtime="20201220 11:59:32.644"></status>
 </kw>
-<status status="PASS" starttime="20201220 11:45:42.868" endtime="20201220 11:45:48.653"></status>
+<status status="PASS" starttime="20201220 11:59:28.051" endtime="20201220 11:59:32.644"></status>
 </kw>
 <kw name="ByPass SignIn Popup">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
@@ -65,15 +62,15 @@
 <arg>${Locator_YTSignInPopup}</arg>
 <arg>${Timeout}</arg>
 </arguments>
-<status status="PASS" starttime="20201220 11:45:48.656" endtime="20201220 11:45:48.996"></status>
+<status status="PASS" starttime="20201220 11:59:32.645" endtime="20201220 11:59:33.303"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>${MinWait}</arg>
 </arguments>
-<msg timestamp="20201220 11:45:49.999" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20201220 11:45:48.997" endtime="20201220 11:45:49.999"></status>
+<msg timestamp="20201220 11:59:34.304" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20201220 11:59:33.303" endtime="20201220 11:59:34.304"></status>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
@@ -81,10 +78,10 @@
 <arg>None</arg>
 <arg>TAB</arg>
 </arguments>
-<msg timestamp="20201220 11:45:50.000" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20201220 11:45:50.000" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20201220 11:45:50.000" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20201220 11:45:49.999" endtime="20201220 11:45:50.101"></status>
+<msg timestamp="20201220 11:59:34.305" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20201220 11:59:34.306" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20201220 11:59:34.306" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20201220 11:59:34.304" endtime="20201220 11:59:34.491"></status>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
@@ -92,10 +89,10 @@
 <arg>None</arg>
 <arg>TAB</arg>
 </arguments>
-<msg timestamp="20201220 11:45:50.102" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20201220 11:45:50.102" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20201220 11:45:50.102" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20201220 11:45:50.101" endtime="20201220 11:45:50.135"></status>
+<msg timestamp="20201220 11:59:34.491" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg timestamp="20201220 11:59:34.491" level="INFO">Pressing special key TAB to browser.</msg>
+<msg timestamp="20201220 11:59:34.491" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20201220 11:59:34.491" endtime="20201220 11:59:34.765"></status>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
@@ -103,129 +100,111 @@
 <arg>None</arg>
 <arg>RETURN</arg>
 </arguments>
-<msg timestamp="20201220 11:45:50.136" level="INFO">Sending key(s) ('RETURN',) to page.</msg>
-<msg timestamp="20201220 11:45:50.137" level="INFO">Pressing special key RETURN to browser.</msg>
-<msg timestamp="20201220 11:45:50.137" level="INFO">Releasing special key RETURN.</msg>
-<status status="PASS" starttime="20201220 11:45:50.135" endtime="20201220 11:45:50.220"></status>
+<msg timestamp="20201220 11:59:34.766" level="INFO">Sending key(s) ('RETURN',) to page.</msg>
+<msg timestamp="20201220 11:59:34.766" level="INFO">Pressing special key RETURN to browser.</msg>
+<msg timestamp="20201220 11:59:34.766" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20201220 11:59:34.765" endtime="20201220 11:59:35.053"></status>
 </kw>
-<status status="PASS" starttime="20201220 11:45:48.654" endtime="20201220 11:45:50.221"></status>
+<status status="PASS" starttime="20201220 11:59:32.645" endtime="20201220 11:59:35.054"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>${MinWait}</arg>
 </arguments>
-<msg timestamp="20201220 11:45:51.223" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20201220 11:45:50.221" endtime="20201220 11:45:51.223"></status>
+<msg timestamp="20201220 11:59:36.058" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20201220 11:59:35.055" endtime="20201220 11:59:36.058"></status>
 </kw>
-<kw name="Click Element By Locator">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Locator_VideoShareIcon}</arg>
+<arg>${Timeout}</arg>
+</arguments>
+<status status="PASS" starttime="20201220 11:59:36.058" endtime="20201220 11:59:36.971"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${Locator_VideoShareIcon}</arg>
 </arguments>
+<msg timestamp="20201220 11:59:36.972" level="INFO">Clicking element 'xpath://html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[4]/div[1]/div/div[5]/div[2]/ytd-video-primary-info-renderer/div/div/div[3]/div/ytd-menu-renderer/div/ytd-button-renderer[1]/a/yt-formatted-string'.</msg>
+<status status="PASS" starttime="20201220 11:59:36.971" endtime="20201220 11:59:37.255"></status>
+</kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
-<arg>${locator}</arg>
+<arg>${Locator_ShareIconCopyBtn}</arg>
 <arg>${Timeout}</arg>
 </arguments>
-<status status="PASS" starttime="20201220 11:45:51.226" endtime="20201220 11:45:53.870"></status>
+<status status="PASS" starttime="20201220 11:59:37.255" endtime="20201220 11:59:37.869"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>${locator}</arg>
-</arguments>
-<msg timestamp="20201220 11:45:53.871" level="INFO">Clicking element 'xpath://html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[4]/div[1]/div/div[5]/div[2]/ytd-video-primary-info-renderer/div/div/div[3]/div/ytd-menu-renderer/div/ytd-button-renderer[1]/a/yt-formatted-string'.</msg>
-<status status="PASS" starttime="20201220 11:45:53.870" endtime="20201220 11:45:56.138"></status>
-</kw>
-<status status="PASS" starttime="20201220 11:45:51.224" endtime="20201220 11:45:56.139"></status>
-</kw>
-<kw name="Click Element By Locator">
 <arguments>
 <arg>${Locator_ShareIconCopyBtn}</arg>
 </arguments>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` is visible.</doc>
-<arguments>
-<arg>${locator}</arg>
-<arg>${Timeout}</arg>
-</arguments>
-<status status="PASS" starttime="20201220 11:45:56.140" endtime="20201220 11:45:57.034"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>${locator}</arg>
-</arguments>
-<msg timestamp="20201220 11:45:57.035" level="INFO">Clicking element 'id:copy-button'.</msg>
-<status status="PASS" starttime="20201220 11:45:57.035" endtime="20201220 11:45:57.505"></status>
-</kw>
-<status status="PASS" starttime="20201220 11:45:56.139" endtime="20201220 11:45:57.505"></status>
+<msg timestamp="20201220 11:59:37.870" level="INFO">Clicking element 'id:copy-button'.</msg>
+<status status="PASS" starttime="20201220 11:59:37.869" endtime="20201220 11:59:38.060"></status>
 </kw>
 <kw name="Get Text From Clipboard" library="helperKeywords">
 <assign>
 <var>${copied_video_url}</var>
 </assign>
-<msg timestamp="20201220 11:45:57.581" level="INFO">${copied_video_url} = https://youtu.be/k6NmJKcS7wk</msg>
-<status status="PASS" starttime="20201220 11:45:57.505" endtime="20201220 11:45:57.581"></status>
+<msg timestamp="20201220 11:59:38.133" level="INFO">${copied_video_url} = https://youtu.be/k6NmJKcS7wk</msg>
+<status status="PASS" starttime="20201220 11:59:38.060" endtime="20201220 11:59:38.133"></status>
 </kw>
-<kw name="Switch To New Tab With Goto URL">
-<arguments>
-<arg>${copied_video_url}</arg>
-</arguments>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <doc>Executes the given JavaScript code with possible arguments.</doc>
 <arguments>
 <arg>window.open('')</arg>
 </arguments>
-<msg timestamp="20201220 11:45:57.586" level="INFO">Executing JavaScript:
+<msg timestamp="20201220 11:59:38.137" level="INFO">Executing JavaScript:
 window.open('')
 Without any arguments.</msg>
-<status status="PASS" starttime="20201220 11:45:57.583" endtime="20201220 11:45:58.201"></status>
+<status status="PASS" starttime="20201220 11:59:38.134" endtime="20201220 11:59:38.204"></status>
 </kw>
 <kw name="Switch Window" library="SeleniumLibrary">
 <doc>Switches to browser window matching ``locator``.</doc>
 <arguments>
 <arg>title=undefined</arg>
 </arguments>
-<status status="PASS" starttime="20201220 11:45:58.201" endtime="20201220 11:45:58.710"></status>
+<status status="PASS" starttime="20201220 11:59:38.204" endtime="20201220 11:59:38.367"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the current browser window to the provided ``url``.</doc>
 <arguments>
-<arg>${url}</arg>
+<arg>${copied_video_url}</arg>
 </arguments>
-<msg timestamp="20201220 11:45:58.711" level="INFO">Opening url 'https://youtu.be/k6NmJKcS7wk'</msg>
-<status status="PASS" starttime="20201220 11:45:58.710" endtime="20201220 11:46:03.703"></status>
-</kw>
-<status status="PASS" starttime="20201220 11:45:57.582" endtime="20201220 11:46:03.703"></status>
+<msg timestamp="20201220 11:59:38.369" level="INFO">Opening url 'https://youtu.be/k6NmJKcS7wk'</msg>
+<status status="PASS" starttime="20201220 11:59:38.368" endtime="20201220 11:59:40.881"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>${MinWait}</arg>
 </arguments>
-<msg timestamp="20201220 11:46:04.706" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20201220 11:46:03.704" endtime="20201220 11:46:04.706"></status>
+<msg timestamp="20201220 11:59:41.883" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20201220 11:59:40.882" endtime="20201220 11:59:41.883"></status>
 </kw>
 <kw name="Get Window Titles" library="SeleniumLibrary">
 <doc>Returns and logs titles of all windows of the selected browser.</doc>
 <assign>
 <var>@{titles}</var>
 </assign>
-<msg timestamp="20201220 11:46:05.384" level="INFO">Altogether 2 items.
+<msg timestamp="20201220 11:59:42.596" level="INFO">Altogether 2 items.
 1: 'Ik heb even laten zien wat hij kan' | WEGMISBRUIKERS - YouTube
 2: 'Ik heb even laten zien wat hij kan' | WEGMISBRUIKERS - YouTube</msg>
-<msg timestamp="20201220 11:46:05.384" level="INFO">@{titles} = [ 'Ik heb even laten zien wat hij kan' | WEGMISBRUIKERS - YouTube | 'Ik heb even laten zien wat hij kan' | WEGMISBRUIKERS - YouTube ]</msg>
-<status status="PASS" starttime="20201220 11:46:04.707" endtime="20201220 11:46:05.384"></status>
+<msg timestamp="20201220 11:59:42.597" level="INFO">@{titles} = [ 'Ik heb even laten zien wat hij kan' | WEGMISBRUIKERS - YouTube | 'Ik heb even laten zien wat hij kan' | WEGMISBRUIKERS - YouTube ]</msg>
+<status status="PASS" starttime="20201220 11:59:41.884" endtime="20201220 11:59:42.597"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${titles}[0]</arg>
 </arguments>
-<msg timestamp="20201220 11:46:05.386" level="INFO">'Ik heb even laten zien wat hij kan' | WEGMISBRUIKERS - YouTube</msg>
-<status status="PASS" starttime="20201220 11:46:05.385" endtime="20201220 11:46:05.386"></status>
+<msg timestamp="20201220 11:59:42.598" level="INFO">'Ik heb even laten zien wat hij kan' | WEGMISBRUIKERS - YouTube</msg>
+<status status="PASS" starttime="20201220 11:59:42.597" endtime="20201220 11:59:42.598"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -233,13 +212,13 @@ Without any arguments.</msg>
 <arg>${titles}[0]</arg>
 <arg>${titles}[1]</arg>
 </arguments>
-<status status="PASS" starttime="20201220 11:46:05.386" endtime="20201220 11:46:05.387"></status>
+<status status="PASS" starttime="20201220 11:59:42.598" endtime="20201220 11:59:42.599"></status>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="teardown">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20201220 11:46:05.387" endtime="20201220 11:46:06.025"></status>
+<status status="PASS" starttime="20201220 11:59:42.604" endtime="20201220 11:59:42.977"></status>
 </kw>
-<status status="PASS" starttime="20201220 11:45:31.698" endtime="20201220 11:46:06.025" critical="yes"></status>
+<status status="PASS" starttime="20201220 11:59:19.418" endtime="20201220 11:59:42.984" critical="yes"></status>
 </test>
 <doc>1. Launch browser with a YT video URL
 2. Pass youtube agreement Popup
@@ -248,7 +227,7 @@ Without any arguments.</msg>
 5. Click on Copy url button [video link will be saved on clipborad]
 6. Launch another browser tab with the copied video URL
 7. Verify if the same video is playing in the new tab, by verifying both titles</doc>
-<status status="PASS" starttime="20201220 11:45:30.471" endtime="20201220 11:46:06.031"></status>
+<status status="PASS" starttime="20201220 11:59:18.708" endtime="20201220 11:59:42.992"></status>
 </suite>
 <statistics>
 <total>
