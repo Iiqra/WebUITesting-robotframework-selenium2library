@@ -18,10 +18,12 @@ ${BaseURL}       youtube.com
 ${VideoURL}      https://www.youtube.com/watch?v=k6NmJKcS7wk
 ${Browser}       Chrome
 ${MinWait}       1s   
-${Timeout}       10s  
+${Timeout}       30s  
 
 # Constans
-${Locator_VideoShareIcon}    xpath://*[@id="button"]/yt-icon
+# IA - the shorter xPath is not workin being not the unique one, therfore, full xpath had be to used 
+#${Locator_VideoShareIcon}      xpath://*[@id="button"]/yt-icon
+${Locator_VideoShareIcon}       xpath://html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[4]/div[1]/div/div[5]/div[2]/ytd-video-primary-info-renderer/div/div/div[3]/div/ytd-menu-renderer/div/ytd-button-renderer[1]/a/yt-formatted-string
 ${Locator_ShareIconCopyBtn}     id:copy-button
 ${Locator_YTAgreementPopup}     id:dialog 
 ${Locator_YTSignInPopup}        id:iframe

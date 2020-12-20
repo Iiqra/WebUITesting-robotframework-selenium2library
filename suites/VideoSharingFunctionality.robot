@@ -10,49 +10,59 @@ Documentation
 
 Library  SeleniumLibrary        
 Library  ./helperKeywords.py
-Test Setup      backup_existing_reports
 Test Teardown   Close Browser
 
 ***Variables***
-${GivenVideoURL}   https://www.youtube.com/watch?v=k6NmJKcS7wk
+${BaseURL}       youtube.com
+${VideoURL}      https://www.youtube.com/watch?v=k6NmJKcS7wk
 ${Browser}       Chrome
-${Timeout}       10s  
+${MinWait}       1s   
+${Timeout}       30s  
+
+# Constans
+# IA - the shorter xPath is not workin being not the unique one, therfore, full xpath had be to used 
+#${Locator_VideoShareIcon}      xpath://*[@id="button"]/yt-icon
+${Locator_VideoShareIcon}       xpath://html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[4]/div[1]/div/div[5]/div[2]/ytd-video-primary-info-renderer/div/div/div[3]/div/ytd-menu-renderer/div/ytd-button-renderer[1]/a/yt-formatted-string
+${Locator_ShareIconCopyBtn}     id:copy-button
+${Locator_YTAgreementPopup}     id:dialog 
+${Locator_YTSignInPopup}        id:iframe
+
 
 ***Test Cases***
 Verify-Video-LinkSharing-Using-ShareButton
+    # hard coded ${MinWait} is added just for the safe side as the iframe is Jave Script bases element and takes unexpected time to load DOM
     Open Browser with Goto URL
     ByPass Youtube Agreement Popup
-    ByPass SignIn Popup
-    sleep   1s 
-    Click Element By Locator    xpath://html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[4]/div[1]/div/div[5]/div[2]/ytd-video-primary-info-renderer/div/div/div[3]/div/ytd-menu-renderer/div/ytd-button-renderer[1]/a/yt-formatted-string
-    Click Element By Locator    id:copy-button
+    ByPass SignIn Popup 
+    sleep   ${MinWait}  
+    Click Element By Locator    ${Locator_VideoShareIcon}
+    Click Element By Locator    ${Locator_ShareIconCopyBtn}
     ${copied_video_url}         get_text_from_clipboard 
     Switch To New Tab With Goto URL    ${copied_video_url}
-    sleep     1s
+    sleep     ${MinWait} 
     @{titles}       Get Window Titles    
     log       ${titles}[0] 
     should be equal       ${titles}[0]        ${titles}[1]   
 
 ***Keywords***
 Open Browser with Goto URL
-    Open Browser    ${GivenVideoURL}      ${Browser}
+    Open Browser    ${VideoURL}      ${Browser}
 
 ByPass Youtube Agreement Popup 
-    Wait Until Element is Visible   id:dialog     ${Timeout}
+    Wait Until Element is Visible   ${Locator_YTAgreementPopup}     ${Timeout}
     Press Keys     None    TAB 
     Press Keys     None    TAB 
     Press Keys     None    RETURN
 
 ByPass SignIn Popup 
-    Wait Until Element is Visible   id:iframe     ${Timeout}    
-    sleep   1s
+    Wait Until Element is Visible   ${Locator_YTSignInPopup}     ${Timeout}    
+    sleep   ${MinWait} 
     Press Keys     None    TAB 
     Press Keys     None    TAB 
     Press Keys     None    RETURN
     
 Click Element By Locator
     [Arguments]      ${locator}
-    sleep     3s
     Wait Until Element is Visible   ${locator}    ${Timeout}
     Click Element     ${locator}
 
